@@ -9,7 +9,10 @@ Together AI chat and native model services for Kujo.
 ## Install
 
 ```bash
-kujo run /path/to/kennel/kennel.kujo --interpreter -- add github:kujolang/together@v0.1.1 --alias together
+kujo run /path/to/kennel/kennel.kujo \
+  --interpreter \
+  -- add github:kujolang/together@v0.1.1 \
+  --alias together
 kujo run /path/to/kennel/kennel.kujo --interpreter -- install
 export TOGETHER_API_KEY=your-key
 ```
