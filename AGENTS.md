@@ -1,0 +1,1 @@
+Root exports are in `together.kujo`; native Together code is `src/together.kujo`; the AI SDK driver is `src/provider.kujo`. Run `bash scripts/release_quality_gate.sh`. Preserve Together reasoning/tool metadata, use immutable dependencies, and do not modify AI SDK core.
