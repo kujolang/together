@@ -1,0 +1,3 @@
+from together import create_client, client_chat
+client := create_client({})
+print(client_chat(client, {"model":"meta-llama/Llama-3.3-70B-Instruct-Turbo","messages":[{"role":"user","content":"Hello from Kujo!"}]}))
