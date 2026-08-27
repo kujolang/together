@@ -18,8 +18,20 @@ export TOGETHER_API_KEY=your-key
 
 ```kujo
 from together import create_client, client_chat
+
 client := create_client({})
-result := client_chat(client, {"model":"meta-llama/Llama-3.3-70B-Instruct-Turbo","messages":[{"role":"user","content":"Hello from Kujo!"}]})
+request := {
+    "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+    "messages": [
+        {
+            "role": "user",
+            "content": "Hello from Kujo!"
+        }
+    ]
+}
+
+result := client_chat(client, request)
+
 print(result["data"]["choices"][0]["message"]["content"])
 ```
 
